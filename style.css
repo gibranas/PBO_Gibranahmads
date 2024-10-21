@@ -1,0 +1,9 @@
+body {
+    background-color: #10b8e2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}

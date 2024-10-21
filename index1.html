@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+    <title>Beranda</title>
+    <style type="Text/CSS">
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(9, 255, 0); font-size: 24px;">Selamat Datang di Halaman Beranda</h1>
+    <a href="about.html">Tentang Kami</a>
+    <button id="button">Buku Tamu</button>
+
+
+    <table id="Table" border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Pesan</th>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById("button").onclick = function() {
+            const name = prompt("Masukkan nama Anda:");
+            const email = prompt("Masukkan email Anda:");
+            const message = prompt("Masukkan pesan Anda:");
+            
+            console.log("Nama: " + name);
+            console.log("Email: " + email);
+            console.log("Pesan: " + message);
+            
+            const table = document.getElementById("Table");
+            const newRow = table.insertRow();
+            newRow.insertCell(0).innerText = name;
+            newRow.insertCell(1).innerText = email;
+            newRow.insertCell(2).innerText = message;
+        };
+    </script>
+</body>
+</html>
